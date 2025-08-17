@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Julian Flieller's Personal Website
+
+A modern, responsive personal website featuring AI insights, research papers, and professional connections.
+
+## Features
+
+- **Modern Design**: Clean white and blue color scheme with smooth animations
+- **Responsive Layout**: Works perfectly on desktop, tablet, and mobile devices
+- **Research Papers**: Dynamically updated research papers with search and sorting capabilities
+- **Social Integration**: Direct links to Substack, LinkedIn, and X (Twitter)
+- **Recommended Reading**: Curated list of essential AI papers and books
+- **MongoDB Integration**: Ready for real-time paper updates every 2 hours
+
+## Technology Stack
+
+- **Frontend**: Next.js 15 with TypeScript
+- **Styling**: Tailwind CSS with custom color palette
+- **Database**: MongoDB with connection pooling
+- **Icons**: Lucide React icons
+- **Fonts**: Inter font family
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. **Set up environment variables:**
+   ```bash
+   cp .env.local.example .env.local
+   # Edit .env.local with your MongoDB connection string
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser:**
+   Visit [http://localhost:3000](http://localhost:3000)
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+MONGODB_URI=your_mongodb_connection_string_here
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/                    # Next.js app router
+│   ├── api/papers/        # API routes for research papers
+│   ├── globals.css        # Global styles and CSS variables
+│   ├── layout.tsx         # Root layout component
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── Header.tsx         # Header with Substack link
+│   ├── SocialLinks.tsx    # Social media connections
+│   ├── RecommendedReading.tsx # Curated reading list
+│   └── ResearchPapers.tsx # Main papers component with search/sort
+├── lib/
+│   └── mongodb.ts         # MongoDB connection configuration
+└── types/
+    └── research.ts        # TypeScript type definitions
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Components
 
-## Learn More
+### Header
+- Prominent name display with gradient background
+- Animated Substack link with call-to-action
+- Professional tagline about AI insights
 
-To learn more about Next.js, take a look at the following resources:
+### Research Papers
+- Real-time search across title, authors, abstract, and keywords
+- Frontend sorting by date, title, category, or relevance
+- Responsive grid layout with paper details
+- Auto-refresh capability for new papers
+- Visual indicators for update frequency
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Social Links
+- Professional LinkedIn and X (Twitter) integration
+- Hover effects and smooth transitions
+- Clear call-to-action descriptions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Recommended Reading
+- Mix of essential research papers and books
+- External links with visual indicators
+- Categorized by type (article/book)
 
-## Deploy on Vercel
+## MongoDB Schema
+
+```javascript
+// Research Paper Document
+{
+  _id: ObjectId,
+  title: String,
+  authors: [String],
+  abstract: String,
+  url: String,
+  publishedDate: Date,
+  source: String,
+  keywords: [String],
+  category: String,
+  updatedAt: Date,
+  createdAt: Date
+}
+```
+
+## Deployment
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Make sure to set up your environment variables in your deployment platform.
+
+## Backend Integration
+
+The frontend is ready to work with your paper scraping backend. The API expects:
+- Regular updates to the MongoDB `papers` collection
+- Papers to include all required fields from the schema
+- Automatic refresh every 2 hours as indicated in the UI
+
+## License
+
+This project is for personal use by Julian Flieller.
