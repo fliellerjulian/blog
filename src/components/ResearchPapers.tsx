@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
-import { Search, Filter, Clock, ExternalLink, Users, Calendar, Tag, RefreshCw } from 'lucide-react';
+import { Search, Filter, Clock, ExternalLink, Users, Calendar, Tag } from 'lucide-react';
 import { ResearchPaper, SortOption } from '@/types/research';
 import { formatDistanceToNow, parseISO } from 'date-fns';
 
@@ -105,14 +105,6 @@ export default function ResearchPapers() {
     });
   }, [papers, searchTerm, sortBy]);
 
-  const handleRefresh = async () => {
-    setLoading(true);
-    // In real implementation, this would call the API
-    setTimeout(() => {
-      setLastUpdated(new Date());
-      setLoading(false);
-    }, 1000);
-  };
 
   return (
     <section className="w-full py-16 bg-white">
@@ -128,13 +120,6 @@ export default function ResearchPapers() {
                 Updated {lastUpdated ? formatDistanceToNow(lastUpdated, { addSuffix: true }) : 'recently'}
                 • Updates every 2 hours
               </span>
-              <button
-                onClick={handleRefresh}
-                disabled={loading}
-                className="ml-2 p-1 hover:bg-slate-100 rounded transition-colors duration-200"
-              >
-                <RefreshCw className={`w-4 h-4 text-slate-400 hover:text-slate-600 ${loading ? 'animate-spin' : ''}`} />
-              </button>
             </div>
           </div>
           
