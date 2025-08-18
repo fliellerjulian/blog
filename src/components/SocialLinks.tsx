@@ -48,7 +48,7 @@ export default function SocialLinks() {
             Connect With Me
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Let's discuss AI, technology, and the future. Always open to connecting with fellow tech enthusiasts.
+            Let&apos;s discuss AI, technology, and the future. Always open to connecting with fellow tech enthusiasts.
           </p>
         </div>
         

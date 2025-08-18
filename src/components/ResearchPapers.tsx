@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Search, Filter, Clock, ExternalLink, Users, Calendar, Tag, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ResearchPaper, SortOption } from '@/types/research';
-import { formatDistanceToNow, parseISO } from 'date-fns';
+import { formatDistanceToNow } from 'date-fns';
 
 export default function ResearchPapers() {
   const [papers, setPapers] = useState<ResearchPaper[]>([]);
