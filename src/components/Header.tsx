@@ -28,14 +28,15 @@ export default function Header() {
             </h1>
 
             <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-              Deep dives into AI research, practical solutions, and the technologies shaping tomorrow.
+              Deep dives into AI research, practical solutions, and the
+              technologies shaping tomorrow.
             </p>
           </div>
 
           {/* Prominent Substack CTA */}
           <div className="flex justify-center pt-4">
             <a
-              href="https://substack.com/@julianflieller"
+              href="https://substack.com/@fliellerjulian/"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl text-lg"

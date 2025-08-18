@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { ExternalLink, Linkedin, Github } from 'lucide-react';
+import { ExternalLink, Linkedin, Github } from "lucide-react";
 
 interface SocialLink {
   name: string;
@@ -11,33 +11,33 @@ interface SocialLink {
 export default function SocialLinks() {
   const socialLinks: SocialLink[] = [
     {
-      name: 'LinkedIn',
-      href: 'https://linkedin.com/in/julianflieller',
-      icon: <Linkedin className="w-6 h-6" />
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/julian-flieller/",
+      icon: <Linkedin className="w-6 h-6" />,
     },
     {
-      name: 'X (Twitter)',
-      href: 'https://x.com/julianflieller',
+      name: "X (Twitter)",
+      href: "https://x.com/fliellerjulian",
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
         </svg>
-      )
+      ),
     },
     {
-      name: 'GitHub',
-      href: 'https://github.com/julianflieller',
-      icon: <Github className="w-6 h-6" />
+      name: "GitHub",
+      href: "https://github.com/fliellerjulian",
+      icon: <Github className="w-6 h-6" />,
     },
     {
-      name: 'Strava',
-      href: 'https://strava.com/athletes/julianflieller',
+      name: "Strava",
+      href: "https://strava.com/athletes/fliellerjulian",
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.008 13.828h4.172"/>
+          <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.008 13.828h4.172" />
         </svg>
-      )
-    }
+      ),
+    },
   ];
 
   return (
@@ -48,10 +48,11 @@ export default function SocialLinks() {
             Connect With Me
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Let&apos;s discuss AI, technology, and the future. Always open to connecting with fellow tech enthusiasts.
+            Let&apos;s discuss AI, technology, and the future. Always open to
+            connecting with fellow tech enthusiasts.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
           {socialLinks.map((link) => (
             <a
