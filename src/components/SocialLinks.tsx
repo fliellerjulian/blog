@@ -28,6 +28,15 @@ export default function SocialLinks() {
       name: 'GitHub',
       href: 'https://github.com/julianflieller',
       icon: <Github className="w-6 h-6" />
+    },
+    {
+      name: 'Strava',
+      href: 'https://strava.com/athletes/julianflieller',
+      icon: (
+        <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7.008 13.828h4.172"/>
+        </svg>
+      )
     }
   ];
 
@@ -43,7 +52,7 @@ export default function SocialLinks() {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center">
           {socialLinks.map((link) => (
             <a
               key={link.name}

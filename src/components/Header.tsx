@@ -30,7 +30,7 @@ export default function Header() {
           </div>
 
           {/* Prominent Substack CTA */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+          <div className="flex justify-center pt-4">
             <a
               href="https://substack.com/@julianflieller" 
               target="_blank"
@@ -43,10 +43,6 @@ export default function Header() {
               Read My AI Opinions
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
-            
-            <div className="text-sm text-slate-500">
-              • Weekly insights • Deep dives • Hot takes
-            </div>
           </div>
 
           {/* Subtle name attribution */}
