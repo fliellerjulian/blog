@@ -1,0 +1,10 @@
+- lambda functions
+    - chatgpt integration
+    - cursor
+    - anthropic
+    - openai
+    - deepseek
+
+- analytics setup
+- recommendation papers
+- 

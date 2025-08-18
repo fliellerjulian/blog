@@ -9,9 +9,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Julian Flieller - AI Research & Insights",
-  description: "Personal website featuring AI opinions, research papers, and professional insights by Julian Flieller",
-  keywords: ["AI", "research", "machine learning", "artificial intelligence", "tech insights"],
+  title: "Julian Flieller - AppliedAI Research & Insights",
+  description:
+    "The latest AI research papers, and professional insights by Julian Flieller",
+  keywords: [
+    "AI",
+    "research",
+    "machine learning",
+    "artificial intelligence",
+    "tech insights",
+  ],
   authors: [{ name: "Julian Flieller" }],
   viewport: "width=device-width, initial-scale=1",
 };
@@ -23,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} font-sans antialiased min-h-screen bg-white text-slate-800`}>
+      <body
+        className={`${inter.variable} font-sans antialiased min-h-screen bg-white text-slate-800`}
+      >
         {children}
       </body>
     </html>
