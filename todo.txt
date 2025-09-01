@@ -1,10 +1,4 @@
-- lambda functions
-    - chatgpt integration
-    - cursor
-    - anthropic
-    - openai
-    - deepseek
-
 - analytics setup
+- search for papers I want to add to the reading list
 - recommendation papers
 - 
