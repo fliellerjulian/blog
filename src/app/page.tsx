@@ -1,21 +1,21 @@
 import Header from "@/components/Header";
 import SocialLinks from "@/components/SocialLinks";
-import RecommendedReading from "@/components/RecommendedReading";
-import ResearchPapers from "@/components/ResearchPapers";
+import RecommendedResources from "../components/RecommendedResources";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
       <SocialLinks />
-      <RecommendedReading />
-      <ResearchPapers />
-      
+      <Projects />
+      <RecommendedResources />
+
       <footer className="w-full bg-white py-8">
         <div className="max-w-4xl mx-auto px-6 sm:px-8">
           <div className="text-center text-slate-600 text-sm">
             <p className="flex items-center justify-center gap-1">
-              Made with 
+              Made with
               <span className="text-red-500">❤️</span>
               by Julian Flieller
             </p>
@@ -26,7 +26,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-slate-500 hover:text-blue-600 transition-colors"
               >
-                Source code
+                Source code (nothing special here)
               </a>
               <span className="text-slate-300">•</span>
               <span className="text-slate-500">

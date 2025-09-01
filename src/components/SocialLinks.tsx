@@ -11,7 +11,7 @@ export default function SocialLinks() {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="https://linkedin.com/in/julianflieller"
+              href="https://www.linkedin.com/in/julian-flieller"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg transition-colors duration-200 text-sm font-medium"
@@ -50,7 +50,7 @@ export default function SocialLinks() {
               className="inline-flex items-center gap-2 px-4 py-2 bg-slate-50 hover:bg-slate-100 text-slate-700 rounded-lg transition-colors duration-200 text-sm font-medium"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.154-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0L3.455 13.828h4.172"/>
+                <path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.154-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0L3.455 13.828h4.172" />
               </svg>
               Strava
             </a>

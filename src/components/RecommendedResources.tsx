@@ -1,32 +1,31 @@
 "use client";
 
-import { RecommendedItem } from "@/types/research";
+import { RecommendedItem } from "../types/resources";
 
-export default function RecommendedReading() {
+export default function RecommendedResources() {
   const recommendedItems: RecommendedItem[] = [
     {
-      title: "Attention Is All You Need",
-      author: "Vaswani et al.",
-      type: "paper",
-      url: "https://arxiv.org/abs/1706.03762",
-      description:
-        "The foundational transformer paper that introduced the attention mechanism and revolutionized natural language processing.",
-    },
-    {
-      title: "The Alignment Problem",
-      author: "Brian Christian",
+      title: "Principles of Building AI Agents",
+      author: "Mastra AI",
       type: "book",
-      url: "https://brianchristian.org/the-alignment-problem/",
-      description:
-        "Essential reading on AI safety and the challenges of aligning AI systems with human values and intentions.",
+      url: "https://mastra.ai/book",
+      description: "Understanding the key building blocks of agents.",
     },
     {
-      title: "Constitutional AI",
-      author: "Anthropic",
-      type: "paper",
-      url: "https://arxiv.org/abs/2212.08073",
+      title: "Become An AI Engineer",
+      author: "Greg Kamradt",
+      type: "video",
+      url: "https://www.youtube.com/watch?v=PSWUr5E_OKY",
       description:
-        "Training AI systems to be helpful and harmless through self-improvement and constitutional principles.",
+        "Video on how to become an AI engineer, includes everything you need to know.",
+    },
+    {
+      title: "Cursor Team: Future of Programming with AI",
+      author: "Lex Fridman",
+      type: "podcast",
+      url: "https://www.youtube.com/watch?v=oFfVt3S51T4",
+      description:
+        "Super interesting podcast on the future of Programming with AI - with the cursor team",
     },
   ];
 
@@ -34,9 +33,15 @@ export default function RecommendedReading() {
     <section className="w-full bg-white">
       <div className="max-w-4xl mx-auto px-6 py-12 sm:px-8">
         <div className="space-y-8">
-          <h2 className="text-slate-900 font-bold text-xl tracking-tight">
-            Reading
-          </h2>
+          <div className="space-y-2">
+            <h2 className="text-slate-900 font-bold text-xl tracking-tight">
+              Resources
+            </h2>
+            <p className="text-slate-600 text-sm">
+              Books, articles, videos, and podcasts that I&apos;ve found useful
+              - apart from the usual anthropic, openai, and x.ai papers.
+            </p>
+          </div>
 
           <div className="grid gap-4">
             {recommendedItems.map((item, index) => (
