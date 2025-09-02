@@ -23,14 +23,12 @@ export default function Header() {
               <h1 className="text-slate-900 font-bold text-3xl sm:text-4xl tracking-tight">
                 Julian Flieller
               </h1>
-              <p className="text-slate-600 text-lg font-medium">
-                Software Engineer & Applied AI Researcher
-              </p>
+              <p className="text-slate-600 text-lg font-medium">AI Engineer</p>
             </div>
 
             <div className="text-slate-700 text-lg leading-relaxed max-w-3xl">
               <p>
-                I develop AI Agents for battery teams{" "}
+                I develop ai agents for battery teams{" "}
                 <a
                   href="https://ohm.ai"
                   target="_blank"
@@ -38,27 +36,7 @@ export default function Header() {
                 >
                   @Ohm
                 </a>{" "}
-                and write about my challenges and learnings on my Substack.
               </p>
-            </div>
-
-            {/* Quick stats and CTA */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-2">
-              <a
-                href="https://substack.com/@fliellerjulian/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white border border-blue-600 text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg transition-colors text-sm font-medium"
-              >
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
-                </svg>
-                Substack
-              </a>
             </div>
           </div>
         </div>
