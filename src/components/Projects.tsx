@@ -26,6 +26,17 @@ export default function Projects() {
       openSource: true,
     },
     {
+      id: "5",
+      title: "Claude Code Feedback",
+      description:
+        "VS Code extension to make PR-style comments on claude code doffs",
+      url: "https://marketplace.visualstudio.com/items?itemName=fliellerjulian.claude-code-feedback",
+      repository: "https://github.com/fliellerjulian/claude-code-feedback",
+      technologies: ["Node"],
+      status: "active",
+      openSource: true,
+    },
+    {
       id: "3",
       title: "PinFold",
       description: "Clutter free chatgpt with pins and folders",
