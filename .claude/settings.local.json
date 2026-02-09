@@ -4,7 +4,11 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(rm:*)",
-      "WebFetch(domain:lukas-moeller.ch)"
+      "WebFetch(domain:lukas-moeller.ch)",
+      "WebFetch(domain:pref0.com)",
+      "WebSearch",
+      "WebFetch(domain:news.ycombinator.com)",
+      "WebFetch(domain:www.pref0.com)"
     ],
     "deny": []
   }

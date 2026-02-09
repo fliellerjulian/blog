@@ -22,8 +22,18 @@ export default function Projects() {
       url: "https://getaway.direct/",
       repository: "https://github.com/fliellerjulian/getawaydirect",
       technologies: ["Javascript", "Flaks", "Reverse Image Search"],
-      status: "active",
+      status: "deprecated",
       openSource: true,
+    },
+    {
+      id: "6",
+      title: "pref0",
+      description:
+        "Preference learning API for AI agents. Extracts structured preferences from user corrections and serves them at inference time.",
+      url: "https://www.pref0.com/",
+      technologies: ["Python", "Typescript"],
+      status: "active",
+      openSource: false,
     },
     {
       id: "5",
